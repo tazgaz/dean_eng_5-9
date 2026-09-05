@@ -1,0 +1,6 @@
+{
+  "name": "מסע הפעלים באנגלית - כיתה ה' צמרות באר יעקב",
+  "description": "אפליקציה חוויתית ומעצימה ללימוד ותרגול 16 פעלים באנגלית לכיתה ה' בית ספר צמרות באר יעקב",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

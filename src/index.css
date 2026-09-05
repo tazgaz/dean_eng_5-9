@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Rubik', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --bg-bento: #FFF9E6;
+  --color-gold: #FFD700;
+  --color-coral: #FF6B6B;
+  --color-mint: #4ECDC4;
+  --color-purple: #A29BFE;
+  --color-orange: #FF8C42;
+  --color-sand: #FDCB6E;
+}
+
+body {
+  background-color: #FFF9E6;
+  color: #1A1A1A;
+}
+
+.font-english {
+  font-family: 'Fredoka', 'Rubik', system-ui, sans-serif;
+}
+
+.bento-card {
+  background-color: #ffffff;
+  border: 4px solid #000000;
+  border-radius: 1.5rem;
+  box-shadow: 6px 6px 0px 0px #000000;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card-sm {
+  border: 3px solid #000000;
+  border-radius: 1.25rem;
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.bento-btn {
+  border: 3px solid #000000;
+  box-shadow: 3px 3px 0px 0px #000000;
+  transition: all 0.15s ease-in-out;
+}
+
+.bento-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.bento-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px #000000;
+}
+
+.bento-dot-bg {
+  background-image: radial-gradient(#000000 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+@keyframes bounceSubtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-bounce-subtle {
+  animation: bounceSubtle 2s ease-in-out infinite;
+}
+
