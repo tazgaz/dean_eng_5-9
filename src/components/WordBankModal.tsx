@@ -37,7 +37,7 @@ export const WordBankModal: React.FC<WordBankModalProps> = ({
             </div>
             <div>
               <h2 className="text-xl sm:text-2xl font-black">
-                מילון 16 הפעלים - כיתה ה'
+                מילון אוצר המילים למבחן (29 מילים) - כיתה ה'
               </h2>
               <p className="text-xs font-bold text-black/70">
                 בית ספר צמרות באר יעקב • לחצו על הרמקול לשמיעת הגייה באנגלית

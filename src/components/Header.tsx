@@ -36,7 +36,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   const getConfidenceTitle = (lvl: number) => {
     if (lvl >= 90) return { title: 'אלוף על בצמרות! 👑', color: 'from-amber-400 to-yellow-500 text-slate-900' };
-    if (lvl >= 70) return { title: 'מומחה פעלים! 🚀', color: 'from-emerald-400 to-teal-500 text-white' };
+    if (lvl >= 70) return { title: 'מומחה באנגלית! 🚀', color: 'from-emerald-400 to-teal-500 text-white' };
     if (lvl >= 45) return { title: 'מתקדם בשלבים! 🌟', color: 'from-blue-400 to-indigo-500 text-white' };
     if (lvl >= 20) return { title: 'חוקר נלהב! 💡', color: 'from-purple-400 to-pink-500 text-white' };
     return { title: 'מתחיל בעוצמה! 💪', color: 'from-amber-300 to-orange-400 text-slate-900' };

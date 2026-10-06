@@ -41,7 +41,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             </h2>
 
             <p className="text-sm sm:text-base font-bold text-black/75 mt-2 max-w-xl">
-              לומדים את 16 הפעלים צעד אחר צעד: קודם מכירים ומבינים, אחר כך מתרגלים ומאייתים, בודקים את הזיכרון ומסיימים במבחן האלופים!
+              הכנה מקיפה לכל נושאי המבחן: אותיות גדולות וקטנות, 29 מילים באנגלית, אות פותחת לתמונה, התאמת משפטים והבנת הנקרא!
             </p>
           </div>
 
@@ -53,10 +53,10 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               id="continue-current-stage-btn"
             >
               <Play className="w-4 h-4 fill-black text-black" />
-              <span>המשך לשלב {currentStage}</span>
+              <span>המשך לתחנה {currentStage}</span>
             </button>
             <span className="text-[11px] font-bold text-black/60">
-              הושלמו {completedStages.length} מתוך 5 שלבים
+              הושלמו {completedStages.length} מתוך 5 תחנות
             </span>
           </div>
         </div>
@@ -67,10 +67,10 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         <div className="flex items-center justify-between px-2">
           <h3 className="text-lg font-black text-black flex items-center gap-2">
             <span>📚</span>
-            <span>שלבי המסלול לפי הסדר הנכון:</span>
+            <span>תחנות הלמידה והמבחן לפי הסדר:</span>
           </h3>
           <span className="text-xs font-bold text-black/60">
-            לחצו על כל שלב כדי להתחיל
+            לחצו על כל תחנה כדי להתחיל
           </span>
         </div>
 

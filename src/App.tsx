@@ -3,10 +3,10 @@ import { Header } from './components/Header';
 import { GameBoard } from './components/GameBoard';
 import { WordBankModal } from './components/WordBankModal';
 import { CertificateModal } from './components/CertificateModal';
-import { Stage1Learn } from './components/stages/Stage1Learn';
-import { Stage3BubblePopper } from './components/stages/Stage3BubblePopper';
-import { Stage4WordScramble } from './components/stages/Stage4WordScramble';
-import { Stage4Memory } from './components/stages/Stage4Memory';
+import { Stage1Alphabet } from './components/stages/Stage1Alphabet';
+import { Stage2VocabularyFirstLetter } from './components/stages/Stage2VocabularyFirstLetter';
+import { Stage3SentenceMatch } from './components/stages/Stage3SentenceMatch';
+import { Stage4ReadingComprehension } from './components/stages/Stage4ReadingComprehension';
 import { Stage5GrandExam } from './components/stages/Stage5GrandExam';
 import { PlayerProfile, GameProgress, StageId } from './types';
 import { VOCABULARY_WORDS, STAGES_CONFIG } from './data/words';
@@ -182,9 +182,9 @@ export default function App() {
         {/* VIEW 2: Active Mini-Game for the Selected Stage */}
         {currentView === 'game' && (
           <div className="space-y-3">
-            {/* Stage 1: Verb Discovery & Teaching (Teaching First!) */}
+            {/* Stage 1: Alphabet - Capital & Lowercase Letters */}
             {activePlayingStage === 1 && (
-              <Stage1Learn
+              <Stage1Alphabet
                 onComplete={(gain) => {
                   handleStageComplete(1, gain);
                   setActivePlayingStage(2);
@@ -195,9 +195,9 @@ export default function App() {
               />
             )}
 
-            {/* Stage 2: Bubble Popper - Meaning Recognition */}
+            {/* Stage 2: Vocabulary & First Letter for Picture */}
             {activePlayingStage === 2 && (
-              <Stage3BubblePopper
+              <Stage2VocabularyFirstLetter
                 onComplete={(gain) => {
                   handleStageComplete(2, gain);
                   setActivePlayingStage(3);
@@ -208,9 +208,9 @@ export default function App() {
               />
             )}
 
-            {/* Stage 3: Word Scramble & Spelling Builder */}
+            {/* Stage 3: Sentence to Picture Matching */}
             {activePlayingStage === 3 && (
-              <Stage4WordScramble
+              <Stage3SentenceMatch
                 onComplete={(gain) => {
                   handleStageComplete(3, gain);
                   setActivePlayingStage(4);
@@ -221,9 +221,9 @@ export default function App() {
               />
             )}
 
-            {/* Stage 4: Memory Matching (Memory game placed right before the exam) */}
+            {/* Stage 4: Reading Comprehension Short Stories */}
             {activePlayingStage === 4 && (
-              <Stage4Memory
+              <Stage4ReadingComprehension
                 onComplete={(gain) => {
                   handleStageComplete(4, gain);
                   setActivePlayingStage(5);

@@ -35,7 +35,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
         <div className="bg-[#FF6B6B] border-b-4 border-black text-white px-5 py-3 flex items-center justify-between no-print">
           <div className="flex items-center gap-2 text-sm font-black">
             <Award className="w-5 h-5 text-[#FFD700]" />
-            <span>תעודת אלוף/ת הפעלים באנגלית - כיתה ה'</span>
+            <span>תעודת הצטיינות באנגלית - כיתה ה'</span>
           </div>
           <button
             onClick={onClose}
@@ -86,24 +86,20 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
 
           {/* Praise & Accomplishment Bento Box */}
           <div className="max-w-xl mx-auto text-xs sm:text-sm font-bold text-black bg-white p-5 rounded-2xl border-3 border-black shadow-[3px_3px_0px_0px_#000] mb-6">
-            על גילוי התמדה, ביטחון עצמי גבוה ושליטה מוחלטת ב-16 פעלי המפתח באנגלית:
+            על גילוי התמדה, ביטחון עצמי גבוה והצלחה בכל נושאי המבחן: אותיות, אוצר מילים, אות פותחת, קריאת משפטים והבנת הנקרא:
             <div className="mt-2.5 text-[11px] sm:text-xs text-black font-black font-english flex flex-wrap justify-center gap-1.5">
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Swim</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Work</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Make</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Ride</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Learn</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Match</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Say</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Find</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Watch</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Kick</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Read</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Study</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Play</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Wait</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Write</span>
-              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Sing</span>
+              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Princess</span>
+              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Flamingo</span>
+              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Castle</span>
+              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Clown</span>
+              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Cow</span>
+              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Dog</span>
+              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">House</span>
+              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Table</span>
+              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Clock</span>
+              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Meat</span>
+              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Sky</span>
+              <span className="bg-[#FFF9E6] border border-black px-1.5 py-0.5 rounded-md">Clean</span>
             </div>
           </div>
 
