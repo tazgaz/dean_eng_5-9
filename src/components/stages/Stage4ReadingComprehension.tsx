@@ -24,7 +24,17 @@ export const Stage4ReadingComprehension: React.FC<Stage4ReadingComprehensionProp
   const [feedback, setFeedback] = useState('קראו את הטקסט וענו על השאלה:');
   const [isFinished, setIsFinished] = useState(false);
 
-  const currentStory: ReadingStory = READING_STORIES[storyIndex] || READING_STORIES[0];
+  const [stories] = useState<ReadingStory[]>(() =>
+    [...READING_STORIES].map((story) => ({
+      ...story,
+      questions: story.questions.map((q) => ({
+        ...q,
+        options: [...q.options].sort(() => Math.random() - 0.5),
+      })),
+    }))
+  );
+
+  const currentStory: ReadingStory = stories[storyIndex] || stories[0];
   const currentQ = currentStory.questions[questionIndex];
 
   const handleSelectOption = (opt: string) => {

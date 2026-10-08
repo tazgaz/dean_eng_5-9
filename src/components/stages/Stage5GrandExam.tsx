@@ -172,7 +172,14 @@ export const Stage5GrandExam: React.FC<Stage5GrandExamProps> = ({
   onOpenCertificate,
   profile,
 }) => {
-  const [questions] = useState<ExamQuestion[]>(() => [...BASE_QUESTIONS]);
+  const [questions] = useState<ExamQuestion[]>(() =>
+    [...BASE_QUESTIONS]
+      .sort(() => Math.random() - 0.5)
+      .map((q) => ({
+        ...q,
+        options: [...q.options].sort(() => Math.random() - 0.5),
+      }))
+  );
   const [currentIdx, setCurrentIdx] = useState(0);
   const [userAnswers, setUserAnswers] = useState<{ [qId: number]: string }>({});
   const [isExamCompleted, setIsExamCompleted] = useState(false);

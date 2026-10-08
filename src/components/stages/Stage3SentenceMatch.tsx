@@ -16,7 +16,12 @@ export const Stage3SentenceMatch: React.FC<Stage3SentenceMatchProps> = ({
   onAddScore,
 }) => {
   const [items] = useState<SentenceMatchItem[]>(() =>
-    [...SENTENCE_MATCH_ITEMS].sort(() => Math.random() - 0.5)
+    [...SENTENCE_MATCH_ITEMS]
+      .sort(() => Math.random() - 0.5)
+      .map((item) => ({
+        ...item,
+        options: [...item.options].sort(() => Math.random() - 0.5),
+      }))
   );
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedEmoji, setSelectedEmoji] = useState<string | null>(null);
